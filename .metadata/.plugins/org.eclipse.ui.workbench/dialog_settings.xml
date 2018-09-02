@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="WorkbenchPreferenceDialogSettings">
+		<item value="45" key="DIALOG_X_ORIGIN"/>
+		<item value="308" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.ui.internal.QuickAccess">
+		<item value="913" key="dialogHeight"/>
+		<item value="543" key="dialogWidth"/>
+		<list key="textEntries">
+			<item value="2"/>
+			<item value="1"/>
+			<item value="1"/>
+			<item value="1"/>
+		</list>
+		<list key="orderedElements">
+			<item value="org.eclipse.ui.console.ConsoleView"/>
+			<item value="org.eclipse.ui.newWizard(newWizardId=org.eclipse.pde.ui.NewLibraryPluginProjectWizard)"/>
+			<item value="org.eclipse.jdt.ui.preferences.UserLibraryPreferencePage"/>
+			<item value="org.eclipse.ui.newWizard(newWizardId=org.eclipse.emf.examples.LibraryModelWizard)"/>
+		</list>
+		<list key="orderedProviders">
+			<item value="org.eclipse.e4.ui.parts"/>
+			<item value="org.eclipse.ui.commands"/>
+			<item value="org.eclipse.ui.preferences"/>
+			<item value="org.eclipse.ui.commands"/>
+		</list>
+		<list key="textArray">
+			<item value="conso"/>
+			<item value="cons"/>
+			<item value="jar"/>
+			<item value="library"/>
+			<item value="librar"/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.jdt.ui.wizards.NewClassCreationWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.jdt.ui.java"/>
+			<item value="org.eclipse.xtend.ide.wizards"/>
+		</list>
+	</section>
+	<section name="InstallationDialogSettings">
+		<item value="916" key="DIALOG_WIDTH"/>
+		<item value="1|Ubuntu|12.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<item value="1007" key="DIALOG_HEIGHT"/>
+		<item value="-190" key="DIALOG_X_ORIGIN"/>
+		<item value="-258" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

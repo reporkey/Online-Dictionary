@@ -1,0 +1,71 @@
+package client;
+import java.io.*;
+import java.net.*;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+
+import org.json.JSONObject;
+
+public class Client {
+	
+	// IP and port
+	private static String serverIp = "localhost";
+	private static int serverPort = 8080;
+	
+	public static void main(String[] args) throws IOException {
+		// read string from console
+//		BufferedReader inFromUser = new BufferedReader(new InputStreamReader(System.in));
+//		String sentence = inFromUser.readLine();
+		
+		DatagramSocket clientSocket = new DatagramSocket();
+		InetAddress IPAddress = InetAddress.getByName(serverIp);
+		
+		byte[] sendData = new byte[1024];
+		byte[] receiveData = new byte[1024];
+	
+		genJSON("hello", "how to call something");
+		sendData = sentence.getBytes();
+		
+		DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, IPAddress, serverPort);
+		clientSocket.send(sendPacket);
+		DatagramPacket receivePacket = new DatagramPacket(receiveData, receiveData.length);
+		clientSocket.receive(receivePacket);
+		
+		
+		String modifiedSentence = new String(receivePacket.getData());
+		System.out.println("FROM SERVER:" + modifiedSentence);
+		clientSocket.close();
+	}
+	public static JSONObject genJSON(String word, String meaning) {
+		JSONObject obj = new JSONObject();
+
+	    obj.put("word", word);
+	    obj.put("meaning", meaning);
+	    
+	    System.out.println(obj);
+	    
+		JSONObject data = new JSONObject();
+		data.put("obj", obj);
+		data.put("hash", makehash(obj));
+		System.out.println(data);
+	}
+	public static String makehash(JSONObject obj) {
+		String MD5 = null;
+		try {
+			MessageDigest md = MessageDigest.getInstance("MD5");
+			md.update(obj.toString().getBytes());
+			byte[] byteData = md.digest();
+			
+			// byte to hex to string
+			StringBuffer sb = new StringBuffer();
+	        for (int i = 0; i < byteData.length; i++) {
+	        	sb.append(Integer.toString((byteData[i] & 0xff) + 0x100, 16).substring(1));
+	        }
+	        MD5 = sb.toString();
+		} catch (NoSuchAlgorithmException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return MD5;
+	}
+}

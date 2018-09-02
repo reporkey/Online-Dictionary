@@ -1,0 +1,49 @@
+package client;
+
+import java.io.IOException;
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+import java.net.InetAddress;
+
+public class Send {
+	private boolean ack = false;
+	
+	public Send() {
+		// get server IP
+		DatagramSocket clientSocket = new DatagramSocket();
+		InetAddress IPAddress = InetAddress.getByName(serverIp);
+		DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, IPAddress, serverPort);
+		
+		// listen ack
+		byte[] receiveData = new byte[1024];
+		DatagramPacket receivePacket = new DatagramPacket(receiveData, receiveData.length);
+		volatile boolean ack = false;
+		
+		Thread t = new Thread(() -> {
+			try {
+				retransmission(clientSocket, sendPacket);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		});
+		t.start();
+		
+		if (ack == false) {
+			System.currentTimeMillis();
+			clientSocket.send(sendPacket);
+			clientSocket.receive(receivePacket);
+		}
+	}
+	public void retransmission(DatagramSocket clientSocket, DatagramPacket sendPacket) throws InterruptedException, IOException {
+		int RTT = 200;
+		int times = 1;
+		while(true) {
+			Thread.sleep(RTT);
+			if(ack == true) {
+				return;
+			}
+			clientSocket.send(sendPacket);
+		}
+	}
+}
