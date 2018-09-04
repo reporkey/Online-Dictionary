@@ -1,0 +1,268 @@
+package server;
+import java.io.*;
+import java.util.*;
+import java.net.*;
+import org.json.*;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+
+class Methods {
+	public static final String GET = "GET";
+	public static final String POST = "POST";
+	public static final String PUT = "PUT";
+	public static final String DELETE = "DELETE";
+    
+	public static final int success = 0;
+    public static final int fail = -1;
+    public static final int notFound = 1;
+    public static final int emptyValue = 2;
+}
+
+class Dictionary extends Methods{
+	private JSONObject dict;
+	
+	public Dictionary(String dictPath) throws IOException {
+		String dictStr = null;
+		BufferedReader br = new BufferedReader(new FileReader(dictPath));
+		if ((dictStr = br.readLine()) != null){
+			dict = new JSONObject(dictStr);
+	    }
+		br.close();
+	}
+	
+	public String GET(String word){
+		word = word.toUpperCase();
+		String defination = null;
+		System.out.println(word);
+		if (dict.has(word)){
+			defination = dict.getString(word);
+		}
+		return defination;
+	}
+	
+	public int POST(String word, String defination){
+		word = word.toUpperCase();
+		int done = fail;
+		if (!dict.has(word)){ 
+		    dict.put(word, defination);
+		    done = success;
+		    System.out.println("success insert " + word + defination);
+		}
+		return done;
+	}
+	
+	public int PUT(String word, String defination){
+		word = word.toUpperCase();
+		int done = fail;
+		if (!dict.has(word)){
+			done = DELETE(word);
+			if (done == success) {
+				dict.put(word, defination);
+				done = success;
+			}
+		}else {
+			done = notFound;
+		}
+		return done;
+	}
+	
+	public int DELETE(String word){
+		word = word.toUpperCase();
+		int done = fail;
+		if (dict.has(word)){
+		    dict.remove(word);
+		    done = success;
+		}else {
+			done = notFound;
+		}
+		return done;
+	}
+}
+
+
+class Response extends Methods implements Runnable {
+    private static byte[] sendData = new byte[2048];
+    
+	private DatagramPacket receivePacket;
+	private InetAddress clientIp;
+	private int clientPort;
+	private String receiveMessage;
+	private JSONObject receiveData;
+	
+	private String type;
+	private String method;
+	private String word;
+	private String defination;
+	
+	public Response(DatagramPacket receivePacket) {
+		this.receivePacket = receivePacket;
+		this.clientIp = receivePacket.getAddress();
+		this.clientPort = receivePacket.getPort();
+        this.receiveMessage = new String(receivePacket.getData());
+        this.receiveData = new JSONObject(receiveMessage);
+	}
+	
+	public void run() {
+		if (!verify(receiveData)) {
+        	return;
+        }
+		readRequest();
+		switch (method) {
+		case GET:
+			
+			break;
+		
+		case POST:
+			break;
+		
+		case PUT:
+			break;
+		
+		case DELETE:
+			break;
+		}
+		
+		DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, clientIp, clientPort);
+
+		// prepare listening ack
+		byte[] receiveData = new byte[1024];
+		DatagramPacket receivePacket = new DatagramPacket(receiveData, receiveData.length);
+		
+		// retransmission and listen ack
+		Thread t = new Thread(() -> {
+			try {
+				retransmission(clientSocket, sendPacket);
+			} catch (InterruptedException | IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		});
+		t.start();
+		clientSocket.receive(receivePacket);
+		if (receivePacket.getData().equals(sendData)) {
+			ack = true;
+		}
+	}
+	public void readRequest() {
+		JSONObject obj = receiveData.getJSONObject("obj");
+		this.type = obj.getString("type");
+		this.method = obj.getString("method");
+		this.word = obj.getString("word");
+		this.defination = obj.getString("defination");
+//		System.out.println("word = " + word);
+//		System.out.println("defination = " + defination);
+	}
+	// check if ack, correct hash 
+	public boolean verify(JSONObject data) {
+		JSONObject obj = data.getJSONObject("obj");
+		String checksum = data.getString("checksum");
+		return data.has("ack") && checksum.equals(hash(data));
+	}
+	public String hash(JSONObject obj) {
+		String MD5 = null;
+		try {
+			MessageDigest md = MessageDigest.getInstance("MD5");
+			md.update(obj.toString().getBytes());
+			byte[] byteData = md.digest();
+			
+			// byte to hex to string
+			StringBuffer sb = new StringBuffer();
+	        for (int i = 0; i < byteData.length; i++) {
+	        	sb.append(Integer.toString((byteData[i] & 0xff) + 0x100, 16).substring(1));
+	        }
+	        MD5 = sb.toString();
+		} catch (NoSuchAlgorithmException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return MD5;
+	}
+}
+
+
+public class Server {
+	
+	// Declare the port number
+	private static int port = 8080;
+	
+	// Identifies the user number connected
+	private static int counter = 0;
+	
+	private static byte[] receiveData = new byte[2048];
+    
+    private static final String dictPath = "./src/server/dictionary.json";
+   
+    
+	private boolean ack = false;
+	private final long RTT = 200;
+
+	public static void main(String[] args) throws IOException {
+		
+		// setup
+		DatagramSocket serverSocket = new DatagramSocket(port);
+//		Dictionary dict = new Dictionary(dictPath);
+				   
+		// Wait for connections.
+        System.out.println("Waiting for connections");
+        
+        
+//		while(true){
+			// get message
+			DatagramPacket receivePacket = new DatagramPacket(receiveData, receiveData.length);
+            serverSocket.receive(receivePacket);
+            
+            // Start a new thread for a connection
+            Response myThread = new Response(receivePacket);
+            myThread.start();
+            
+//            // read as a string
+//            String sentence = new String(receiveData);
+//            System.out.println("RECEIVED string: " + sentence);
+//            
+//            
+//            
+            // send
+//            String capitalizedSentence = sentence.toUpperCase();
+//            sendData = capitalizedSentence.getBytes();
+//            DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, clientIp, clientPort);
+//            serverSocket.send(sendPacket);		
+//		}
+	}
+		
+	
+	
+	
+	public void retransmission(DatagramSocket clientSocket, DatagramPacket sendPacket) 
+			throws InterruptedException, IOException {
+		int times = 1;
+		while(true) {
+			Thread.sleep(RTT);
+			if(ack == true) {
+				return;
+//			}else if (times > 10) {
+//				return error;
+			}else {
+				clientSocket.send(sendPacket);
+				times++;
+			}
+		}
+	}
+	public void genJSON(String word, String defination) {
+		JSONObject obj = new JSONObject();
+
+	    obj.put("word", word);
+	    obj.put("defination", defination);
+		obj.put("server", "");
+		
+	    System.out.println(obj);
+	    
+		JSONObject data = new JSONObject();
+		data.put("obj", obj);
+		data.put("checksum", hash(obj));
+		System.out.println(data);
+	    deJSON(data);
+	}
+	
+	
+	
+}

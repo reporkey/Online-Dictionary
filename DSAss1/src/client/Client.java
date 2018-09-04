@@ -6,6 +6,7 @@ import java.security.NoSuchAlgorithmException;
 
 import org.json.JSONObject;
 
+
 public class Client {
 	
 	// IP and port
@@ -14,7 +15,13 @@ public class Client {
 	private boolean ack = false;
 	private final long RTT = 200;
 	
-	public void main(String[] args) throws IOException {
+    private static final String GET = "GET";
+    private static final String POST = "POST";
+    private static final String PUT = "PUT";
+    private static final String DELETE = "DELETE";
+	
+	public void main(String[] args) 
+			throws IOException {
 		// read string from console
 //		BufferedReader inFromUser = new BufferedReader(new InputStreamReader(System.in));
 //		String sentence = inFromUser.readLine();
@@ -22,15 +29,26 @@ public class Client {
 		DatagramSocket clientSocket = new DatagramSocket();
 		
 		// prepare word
-		byte[] sendMessage = new byte[1024];
-		byte[] receiveMessage = new byte[1024];
+		byte[] sendMessage = new byte[2048];
+		byte[] receiveMessage = new byte[2048];
 		JSONObject requestData = genJSON("hello");
 		sendMessage = requestData.toString().getBytes();
 		
-		// send word
-		mySend(requestData, sendMessage, clientSocket);
+		// make message
+		JSONObject obj = new JSONObject();
+		obj.put("type", "request");
+		obj.put("method", GET);
+	    obj.put("word", "hello");
+	    obj.put("defination", "");
+		JSONObject data = new JSONObject();
+		data.put("obj", obj);
+		data.put("checksum", hash(obj));
+		data.put("client", "");
 		
-		// receive answer
+		// send message
+		sendRequest(requestData, sendMessage, clientSocket);
+		
+		// receive answer		
 		DatagramPacket receivePacket = new DatagramPacket(receiveMessage, receiveMessage.length);
 		clientSocket.receive(receivePacket);
 		while (true) {
@@ -46,8 +64,9 @@ public class Client {
 		System.out.println("FROM SERVER:" + modifiedSentence);
 		clientSocket.close();
 	}
-	public void mySend(JSONObject requestData, byte[] sendMessage, DatagramSocket clientSocket) throws IOException {
-		// get server IP
+	public void sendRequest(JSONObject requestData, byte[] sendMessage, DatagramSocket clientSocket) 
+			throws IOException {
+		// send message
 		InetAddress IPAddress = InetAddress.getByName(serverIp);
 		DatagramPacket sendPacket = new DatagramPacket(sendMessage, sendMessage.length, IPAddress, serverPort);
 		
@@ -55,16 +74,17 @@ public class Client {
 		byte[] receiveMessage = new byte[1024];
 		DatagramPacket receivePacket = new DatagramPacket(receiveMessage, receiveMessage.length);
 		
-		// retransmission and listen ack
+		// retransmission
 		Thread t = new Thread(() -> {
 			try {
 				retransmission(clientSocket, sendPacket);
 			} catch (InterruptedException | IOException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
+				return;
 			}
 		});
 		t.start();
+		// listen ack
 		while (true) {
 			clientSocket.receive(receivePacket);
 			String receiveString = new String(receivePacket.getData());
@@ -77,7 +97,8 @@ public class Client {
 			}
 		}
 	}
-	public void retransmission(DatagramSocket clientSocket, DatagramPacket sendPacket) throws InterruptedException, IOException {
+	public void retransmission(DatagramSocket clientSocket, DatagramPacket sendPacket) 
+			throws InterruptedException, IOException {
 		int times = 1;
 		while(true) {
 			Thread.sleep(RTT);
@@ -98,11 +119,11 @@ public class Client {
 	    
 		JSONObject data = new JSONObject();
 		data.put("obj", obj);
-		data.put("hash", makehash(obj));
+		data.put("checksum", hash(obj));
 		data.put("client", "");
 		return data;
 	}
-	public String makehash(JSONObject obj) {
+	public String hash(JSONObject obj) {
 		String MD5 = null;
 		try {
 			MessageDigest md = MessageDigest.getInstance("MD5");
