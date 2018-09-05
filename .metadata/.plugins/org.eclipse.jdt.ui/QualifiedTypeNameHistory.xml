@@ -8,4 +8,5 @@
 <fullyQualifiedTypeName name="org.json.simple.parser.JSONParser"/>
 <fullyQualifiedTypeName name="org.json.simple.parser.ParseException"/>
 <fullyQualifiedTypeName name="client.Send"/>
+<fullyQualifiedTypeName name="java.awt.Label"/>
 </qualifiedTypeNameHistroy>
