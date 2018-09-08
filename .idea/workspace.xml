@@ -7,57 +7,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41c19ba9-36e7-4c20-ab9b-a90ee9412b4f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.metadata/.log" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/ClientServer/.markers.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/ClientServer/.syncinfo.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/test/.markers.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/test/.syncinfo.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/.markers.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.debug.ui.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.debug.ui.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.pde.core/.cache/clean-cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.pde.core/.cache/clean-cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.workbench.texteditor/dialog_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.workbench.texteditor/dialog_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/version.ini" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/version.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSAss1_Client/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/DSAss1_Client/.classpath" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSAss1_Client/bin/client/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/DSAss1_Client/bin/client/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSAss1_Client/bin/client/GUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/DSAss1_Client/bin/client/GUI$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSAss1_Client/bin/client/GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/DSAss1_Client/bin/client/GUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSAss1_Client/bin/client/Hash.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSAss1_Client/bin/client/Methods.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSAss1_Client/bin/client/RequestObj.class" beforeDir="false" afterPath="$PROJECT_DIR$/DSAss1_Client/bin/client/RequestObj.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSAss1_Client/bin/client/ResponseObj.class" beforeDir="false" afterPath="$PROJECT_DIR$/DSAss1_Client/bin/client/ResponseObj.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSAss1_Client/bin/client/package-info.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSAss1_Client/src/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSAss1_Client/src/client/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSAss1_Client/src/client/Send.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSAss1_Server/bin/server/Dictionary.class" beforeDir="false" afterPath="$PROJECT_DIR$/DSAss1_Server/bin/server/Dictionary.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSAss1_Server/bin/server/Hash.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSAss1_Server/bin/server/Methods.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSAss1_Server/bin/server/RequestObj.class" beforeDir="false" afterPath="$PROJECT_DIR$/DSAss1_Server/bin/server/RequestObj.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSAss1_Server/bin/server/Response.class" beforeDir="false" afterPath="$PROJECT_DIR$/DSAss1_Server/bin/server/Response.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSAss1_Server/bin/server/ResponseObj.class" beforeDir="false" afterPath="$PROJECT_DIR$/DSAss1_Server/bin/server/ResponseObj.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSAss1_Server/bin/server/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/DSAss1_Server/bin/server/Server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSAss1_Server/bin/server/package-info.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSAss1_Server/src/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSAss1_Server/src/server/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/bin/test/MyThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/test/bin/test/MyThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/bin/test/TestClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/test/bin/test/TestClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/bin/test/package-info.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report.aux" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report.bbl" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.bbl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report.blg" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.blg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report.log" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.synctex.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report.tex.bak" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.tex.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/bin/test/MyThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/bin/test/TestClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/test/Mythread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/test/TestClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/test/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test.eml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test.iml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/DSAss1_Client/bin/" />
     <ignored path="$PROJECT_DIR$/DSAss1_Server/bin/" />
@@ -125,7 +93,7 @@
     <session id="-1927412866">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.opened" value="2" />
@@ -145,11 +113,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="675">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DSAss1_Client/src/client/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="172" column="20" selection-start-line="172" selection-start-column="20" selection-end-line="172" selection-end-column="20" />
+            <state relative-caret-position="912">
+              <caret line="282" selection-start-line="282" selection-end-line="282" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="class#Utilities#0" />
@@ -166,17 +134,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DSAss1_Server/src/server/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="34" column="43" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
+            <state relative-caret-position="429">
+              <caret line="166" column="16" selection-start-line="166" selection-start-column="16" selection-end-line="166" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#Add#0;class#Dictionary#0" />
                 <element signature="class#RequestObj#0" />
                 <element signature="class#ResponseObj#0" />
-                <element signature="class#AckQueue#0" />
                 <element signature="method#run#0;class#Response#0" />
                 <element signature="method#verify#0;class#Response#0" />
                 <element signature="method#retransmission#0;class#Response#0" />
@@ -191,7 +158,6 @@
     <findStrings>
       <find>hash</find>
       <find>Methods</find>
-      <find>runna</find>
       <find>System</find>
       <find>socket.send</find>
       <find>SEND a</find>
@@ -199,6 +165,7 @@
       <find>responce</find>
       <find>Defination</find>
       <find>ackQueue</find>
+      <find>runna</find>
     </findStrings>
     <replaceStrings>
       <replace>Utilities</replace>
@@ -231,7 +198,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="5">
+  <component name="ProjectFrameBounds" extendedState="4">
     <option name="x" value="1920" />
     <option name="y" value="20" />
     <option name="width" value="1920" />
@@ -275,10 +242,6 @@
               <item name="DSAss1_Server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="DS_Java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -293,7 +256,7 @@
     <property name="SearchEverywhereHistoryKey" value="project&#9;ACTION&#9;ShowProjectStructureSettings" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536377769386" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536384309503" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -378,12 +341,12 @@
       <workItem from="1536324784192" duration="8232000" />
       <workItem from="1536333205319" duration="38846000" />
       <workItem from="1536375916677" duration="1294000" />
-      <workItem from="1536377239591" duration="764000" />
+      <workItem from="1536377239591" duration="3244000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52689000" />
+    <option name="totallyTimeSpent" value="55169000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -395,8 +358,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="20" width="1920" height="2136" extended-state="5" />
-    <editor active="true" />
+    <frame x="1920" y="20" width="1920" height="2136" extended-state="4" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.58755505" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -733,10 +695,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/DSAss1_Server/src/server/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="166" column="16" selection-start-line="166" selection-start-column="16" selection-end-line="166" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Add#0;class#Dictionary#0" />
+            <element signature="class#RequestObj#0" />
+            <element signature="class#ResponseObj#0" />
+            <element signature="method#run#0;class#Response#0" />
+            <element signature="method#verify#0;class#Response#0" />
+            <element signature="method#retransmission#0;class#Response#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/DSAss1_Client/src/client/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="172" column="20" selection-start-line="172" selection-start-column="20" selection-end-line="172" selection-end-column="20" />
+        <state relative-caret-position="912">
+          <caret line="282" selection-start-line="282" selection-end-line="282" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="class#Utilities#0" />
@@ -748,23 +726,6 @@
             <element signature="e#3171#3172#0" expanded="true" />
             <element signature="method#Retransmission#0;class#Retransmission#0;class#Client#0" />
             <element signature="method#run#0;class#Retransmission#0;class#Client#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSAss1_Server/src/server/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="34" column="43" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Add#0;class#Dictionary#0" />
-            <element signature="class#RequestObj#0" />
-            <element signature="class#ResponseObj#0" />
-            <element signature="class#AckQueue#0" />
-            <element signature="method#run#0;class#Response#0" />
-            <element signature="method#verify#0;class#Response#0" />
-            <element signature="method#retransmission#0;class#Response#0" />
           </folding>
         </state>
       </provider>
