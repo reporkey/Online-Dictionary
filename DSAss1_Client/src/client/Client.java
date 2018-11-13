@@ -7,24 +7,28 @@ import org.json.JSONObject;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import javax.swing.*;
 
 class Utilities {
+
+	// Method constant
 	public static final String Query = "Query";
 	public static final String Add = "Add";
 	public static final String Remove = "Remove";
-    
+
+	// Status constant
 	public static final int success = 0;
     public static final int notFound = 1;
     public static final int emptyDefinition = 2;
     public static final int wordExisted = 3;
 
+    // constant
 	public static String serverIp ;
 	public static int serverPort;
 	public static final int RTT = 200;
 	public static final int retransmissionCount = 7;
-    
+
+	// translate status from constant to readable string
     public static String translate(int status, String word, String method) {
     	String error = ""; 
     	switch (status) {

@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DSAss1_Client/DSAss1_Client.iml" filepath="$PROJECT_DIR$/DSAss1_Client/DSAss1_Client.iml" />
       <module fileurl="file://$PROJECT_DIR$/DSAss1_Server/DSAss1_Server.iml" filepath="$PROJECT_DIR$/DSAss1_Server/DSAss1_Server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/test/test.iml" filepath="$PROJECT_DIR$/test/test.iml" />
     </modules>
   </component>
 </project>

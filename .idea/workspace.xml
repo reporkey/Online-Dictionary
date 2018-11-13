@@ -7,25 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41c19ba9-36e7-4c20-ab9b-a90ee9412b4f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/report.aux" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.aux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/report.bbl" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.bbl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/report.blg" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.blg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/report.log" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/report.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/report.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.synctex.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/report.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/report.tex.bak" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.tex.bak" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/bin/test/MyThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/bin/test/TestClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/src/test/Mythread.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/src/test/TestClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/src/test/package-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test.eml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSAss1_Client/src/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSAss1_Client/src/client/Client.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/DSAss1_Client/bin/" />
     <ignored path="$PROJECT_DIR$/DSAss1_Server/bin/" />
@@ -93,60 +77,99 @@
     <session id="-1927412866">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="8" />
+          <entry key="java" value="130" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="8" />
+          <entry key="JAVA" value="130" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="199939514">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.16" value="2" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="675">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DSAss1_Client/src/client/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="912">
-              <caret line="282" selection-start-line="282" selection-end-line="282" />
+            <state relative-caret-position="7878">
+              <caret line="202" column="27" selection-start-line="202" selection-start-column="23" selection-end-line="202" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="class#Utilities#0" />
-                <element signature="method#translate#0;class#Utilities#0" />
-                <element signature="method#hash#0;class#Utilities#0" />
-                <element signature="class#RequestObj#0" />
-                <element signature="class#ResponseObj#0" />
-                <element signature="e#3151#3152#0" expanded="true" />
-                <element signature="e#3171#3172#0" expanded="true" />
-                <element signature="method#Retransmission#0;class#Retransmission#0;class#Client#0" />
-                <element signature="method#run#0;class#Retransmission#0;class#Client#0" />
+                <element signature="e#2521#2522#0" expanded="true" />
+                <element signature="e#2538#2539#0" expanded="true" />
+                <element signature="e#2568#2569#0" expanded="true" />
+                <element signature="e#2588#2589#0" expanded="true" />
+                <element signature="e#3055#3056#0" expanded="true" />
+                <element signature="e#3072#3073#0" expanded="true" />
+                <element signature="e#3100#3101#0" expanded="true" />
+                <element signature="e#3118#3119#0" expanded="true" />
+                <element signature="e#3152#3153#0" expanded="true" />
+                <element signature="e#3176#3177#0" expanded="true" />
+                <element signature="e#3203#3204#0" expanded="true" />
+                <element signature="e#3223#3224#0" expanded="true" />
+                <element signature="e#3253#3254#0" expanded="true" />
+                <element signature="e#3273#3274#0" expanded="true" />
+                <element signature="e#4459#4460#0" expanded="true" />
+                <element signature="e#4483#4484#0" expanded="true" />
+                <element signature="e#4536#4537#0" expanded="true" />
+                <element signature="e#4571#4572#0" expanded="true" />
+                <element signature="e#4611#4612#0" expanded="true" />
+                <element signature="e#4660#4661#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DSAss1_Server/src/server/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="166" column="16" selection-start-line="166" selection-start-column="16" selection-end-line="166" selection-end-column="16" />
+            <state relative-caret-position="585">
+              <caret line="41" column="9" lean-forward="true" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#Add#0;class#Dictionary#0" />
-                <element signature="class#RequestObj#0" />
-                <element signature="class#ResponseObj#0" />
-                <element signature="method#run#0;class#Response#0" />
-                <element signature="method#verify#0;class#Response#0" />
-                <element signature="method#retransmission#0;class#Response#0" />
+                <element signature="e#3172#3173#0" expanded="true" />
+                <element signature="e#3192#3193#0" expanded="true" />
+                <element signature="e#3220#3221#0" expanded="true" />
+                <element signature="e#3238#3239#0" expanded="true" />
+                <element signature="e#3272#3273#0" expanded="true" />
+                <element signature="e#3296#3297#0" expanded="true" />
+                <element signature="e#4023#4024#0" expanded="true" />
+                <element signature="e#4040#4041#0" expanded="true" />
+                <element signature="e#4802#4803#0" expanded="true" />
+                <element signature="e#4821#4822#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -166,6 +189,8 @@
       <find>Defination</find>
       <find>ackQueue</find>
       <find>runna</find>
+      <find>run</find>
+      <find>main</find>
     </findStrings>
     <replaceStrings>
       <replace>Utilities</replace>
@@ -179,8 +204,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/DSAss1_Server/src/server/Server.java" />
         <option value="$PROJECT_DIR$/DSAss1_Client/src/client/Client.java" />
+        <option value="$PROJECT_DIR$/DSAss1_Server/src/server/Server.java" />
       </list>
     </option>
   </component>
@@ -198,10 +223,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1920" />
-    <option name="y" value="20" />
-    <option name="width" value="1920" />
+    <option name="y" value="24" />
+    <option name="width" value="1900" />
     <option name="height" value="2136" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -212,7 +237,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
@@ -246,6 +270,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -256,11 +281,12 @@
     <property name="SearchEverywhereHistoryKey" value="project&#9;ACTION&#9;ShowProjectStructureSettings" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536384309503" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537797870130" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -342,11 +368,18 @@
       <workItem from="1536333205319" duration="38846000" />
       <workItem from="1536375916677" duration="1294000" />
       <workItem from="1536377239591" duration="3244000" />
+      <workItem from="1536389513446" duration="405000" />
+      <workItem from="1536390491682" duration="21000" />
+      <workItem from="1536709359049" duration="1214000" />
+      <workItem from="1537676856824" duration="4117000" />
+      <workItem from="1537762545461" duration="5760000" />
+      <workItem from="1537776814109" duration="3000" />
+      <workItem from="1537790833379" duration="2030000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55169000" />
+    <option name="totallyTimeSpent" value="68719000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -358,9 +391,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="20" width="1920" height="2136" extended-state="4" />
+    <frame x="0" y="20" width="3840" height="2140" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.58755505" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1603319" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -695,37 +729,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DSAss1_Server/src/server/Server.java">
+    <entry file="file://$PROJECT_DIR$/DSAss1_Client/src/client/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="166" column="16" selection-start-line="166" selection-start-column="16" selection-end-line="166" selection-end-column="16" />
+        <state relative-caret-position="7878">
+          <caret line="202" column="27" selection-start-line="202" selection-start-column="23" selection-end-line="202" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#Add#0;class#Dictionary#0" />
-            <element signature="class#RequestObj#0" />
-            <element signature="class#ResponseObj#0" />
-            <element signature="method#run#0;class#Response#0" />
-            <element signature="method#verify#0;class#Response#0" />
-            <element signature="method#retransmission#0;class#Response#0" />
+            <element signature="e#2521#2522#0" expanded="true" />
+            <element signature="e#2538#2539#0" expanded="true" />
+            <element signature="e#2568#2569#0" expanded="true" />
+            <element signature="e#2588#2589#0" expanded="true" />
+            <element signature="e#3055#3056#0" expanded="true" />
+            <element signature="e#3072#3073#0" expanded="true" />
+            <element signature="e#3100#3101#0" expanded="true" />
+            <element signature="e#3118#3119#0" expanded="true" />
+            <element signature="e#3152#3153#0" expanded="true" />
+            <element signature="e#3176#3177#0" expanded="true" />
+            <element signature="e#3203#3204#0" expanded="true" />
+            <element signature="e#3223#3224#0" expanded="true" />
+            <element signature="e#3253#3254#0" expanded="true" />
+            <element signature="e#3273#3274#0" expanded="true" />
+            <element signature="e#4459#4460#0" expanded="true" />
+            <element signature="e#4483#4484#0" expanded="true" />
+            <element signature="e#4536#4537#0" expanded="true" />
+            <element signature="e#4571#4572#0" expanded="true" />
+            <element signature="e#4611#4612#0" expanded="true" />
+            <element signature="e#4660#4661#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DSAss1_Client/src/client/Client.java">
+    <entry file="file://$PROJECT_DIR$/DSAss1_Server/src/server/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="912">
-          <caret line="282" selection-start-line="282" selection-end-line="282" />
+        <state relative-caret-position="585">
+          <caret line="41" column="9" lean-forward="true" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="class#Utilities#0" />
-            <element signature="method#translate#0;class#Utilities#0" />
-            <element signature="method#hash#0;class#Utilities#0" />
-            <element signature="class#RequestObj#0" />
-            <element signature="class#ResponseObj#0" />
-            <element signature="e#3151#3152#0" expanded="true" />
-            <element signature="e#3171#3172#0" expanded="true" />
-            <element signature="method#Retransmission#0;class#Retransmission#0;class#Client#0" />
-            <element signature="method#run#0;class#Retransmission#0;class#Client#0" />
+            <element signature="e#3172#3173#0" expanded="true" />
+            <element signature="e#3192#3193#0" expanded="true" />
+            <element signature="e#3220#3221#0" expanded="true" />
+            <element signature="e#3238#3239#0" expanded="true" />
+            <element signature="e#3272#3273#0" expanded="true" />
+            <element signature="e#3296#3297#0" expanded="true" />
+            <element signature="e#4023#4024#0" expanded="true" />
+            <element signature="e#4040#4041#0" expanded="true" />
+            <element signature="e#4802#4803#0" expanded="true" />
+            <element signature="e#4821#4822#0" expanded="true" />
           </folding>
         </state>
       </provider>
